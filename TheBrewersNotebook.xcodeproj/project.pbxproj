@@ -491,6 +491,7 @@
 				GCC_PREFIX_HEADER = "TheBrewersNotebook/Supporting Files/TheBrewersNotebook-Prefix.pch";
 				INFOPLIST_FILE = "TheBrewersNotebook/Supporting Files/TheBrewersNotebook-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "12B48CBF-DA20-4E73-9E52-F9E2C1C63E88";
 				WRAPPER_EXTENSION = app;
 			};
 			name = "TestFlight Release";
