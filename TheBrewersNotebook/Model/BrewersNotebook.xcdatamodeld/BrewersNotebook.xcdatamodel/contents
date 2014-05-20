@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13D65" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="TBNEquipment" representedClassName="TBNEquipment" syncable="YES">
+        <attribute name="batchSize" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="boilSize" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="boilTime" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="calcBoilVolume" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="evapRate" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="hopUtilization" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="lauterDeadspace" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="topUpKettle" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="topUpWater" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="trubChillerLoss" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="tunSpecificHeat" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="tunVolume" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="tunWeight" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="recipes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TBNRecipe" inverseName="equipment" inverseEntity="TBNRecipe" syncable="YES"/>
+    </entity>
+    <entity name="TBNGrain" representedClassName="TBNGrain" syncable="YES">
+        <attribute name="addAfterBoil" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="amount" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="coarseFineDiff" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="color" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="diastaticPower" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="ibuGalPerLB" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="inventory" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="maxInBatch" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="moisture" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="origin" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="potential" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="protein" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="recommendMash" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="supplier" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="yield" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="recipes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TBNRecipe" inverseName="grains" inverseEntity="TBNRecipe" syncable="YES"/>
+    </entity>
+    <entity name="TBNHop" representedClassName="TBNHop" syncable="YES">
+        <attribute name="alpha" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="amount" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="beta" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="form" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hsi" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="origin" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="use" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="recipes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TBNRecipe" inverseName="hops" inverseEntity="TBNRecipe" syncable="YES"/>
+    </entity>
+    <entity name="TBNMash" representedClassName="TBNMash" syncable="YES">
+        <attribute name="equipAdjust" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="grainTemp" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ph" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="spargeTemp" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="tunSpecificHeat" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="tunTemp" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="tunWeight" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="recipes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TBNRecipe" inverseName="mash" inverseEntity="TBNRecipe" syncable="YES"/>
+        <relationship name="steps" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TBNMashSteps" inverseName="mash" inverseEntity="TBNMashSteps" syncable="YES"/>
+    </entity>
+    <entity name="TBNMashSteps" representedClassName="TBNMashSteps" syncable="YES">
+        <attribute name="decoctionAmount" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="endTime" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="infuseAmount" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="infuseTemp" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rampTime" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="stepDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stepTemp" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="stepTime" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="waterGrainRatio" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="mash" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TBNMash" inverseName="steps" inverseEntity="TBNMash" syncable="YES"/>
+    </entity>
+    <entity name="TBNMisc" representedClassName="TBNMisc" syncable="YES">
+        <attribute name="amount" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="amountIsWeight" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="inventory" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="use" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="useFor" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="recipes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TBNRecipe" inverseName="misc" inverseEntity="TBNRecipe" syncable="YES"/>
+    </entity>
+    <entity name="TBNRecipe" representedClassName="TBNRecipe" syncable="YES">
+        <attribute name="abv" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="actualEfficiency" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="age" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="ageTemp" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="asstBrewer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="batchSize" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="boilSize" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="boilTime" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="brewer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="calories" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="carbonation" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="carbonationUsed" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="efficiency" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="estAbv" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="estColor" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="estFinalGravity" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="estOriginalGravity" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="fermentationStages" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="finalGravity" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="ibu" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="ibuMethod" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="originalGravity" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="primaryAge" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="primaryTemp" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="secondaryAge" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="secondaryTemp" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="tasteNotes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tasteRating" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="tertiaryAge" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="equipment" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TBNEquipment" inverseName="recipes" inverseEntity="TBNEquipment" syncable="YES"/>
+        <relationship name="grains" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TBNGrain" inverseName="recipes" inverseEntity="TBNGrain" syncable="YES"/>
+        <relationship name="hops" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TBNHop" inverseName="recipes" inverseEntity="TBNHop" syncable="YES"/>
+        <relationship name="mash" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TBNMash" inverseName="recipes" inverseEntity="TBNMash" syncable="YES"/>
+        <relationship name="misc" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TBNMisc" inverseName="recipes" inverseEntity="TBNMisc" syncable="YES"/>
+        <relationship name="style" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TBNStyle" inverseName="recipes" inverseEntity="TBNStyle" syncable="YES"/>
+        <relationship name="waters" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TBNWater" inverseName="recipes" inverseEntity="TBNWater" syncable="YES"/>
+        <relationship name="yeasts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TBNYeast" inverseName="recipes" inverseEntity="TBNYeast" syncable="YES"/>
+    </entity>
+    <entity name="TBNStyle" representedClassName="TBNStyle" syncable="YES">
+        <attribute name="abvMax" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="abvMin" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="carbMax" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="carbMin" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="category" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="categoryNumber" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="colorMax" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="colorMin" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="examples" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="finalGravityMax" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="finalGravityMin" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="ibuMax" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="ibuMin" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="ingredients" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="originalGravityMax" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="originalGravityMin" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="profile" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="styleGuide" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="styleLetter" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="recipes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TBNRecipe" inverseName="style" inverseEntity="TBNRecipe" syncable="YES"/>
+    </entity>
+    <entity name="TBNWater" representedClassName="TBNWater" syncable="YES">
+        <attribute name="amount" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="bicarbonate" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="calcium" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="chloride" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="magnesium" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ph" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="sodium" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="sulfate" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="recipes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TBNRecipe" inverseName="waters" inverseEntity="TBNRecipe" syncable="YES"/>
+    </entity>
+    <entity name="TBNYeast" representedClassName="TBNYeast" syncable="YES">
+        <attribute name="addToSecondary" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="amount" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="amountIsWeight" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="attenuation" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="bestFor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cultureDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="flocculation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="form" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="laboratory" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="maxReuse" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="maxTemp" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="minTemp" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timesCultured" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="recipes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TBNRecipe" inverseName="yeasts" inverseEntity="TBNRecipe" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="TBNEquipment" positionX="0" positionY="0" width="128" height="283"/>
+        <element name="TBNGrain" positionX="0" positionY="0" width="128" height="328"/>
+        <element name="TBNHop" positionX="0" positionY="0" width="128" height="223"/>
+        <element name="TBNMash" positionX="0" positionY="0" width="128" height="208"/>
+        <element name="TBNMashSteps" positionX="0" positionY="0" width="128" height="223"/>
+        <element name="TBNMisc" positionX="0" positionY="0" width="128" height="193"/>
+        <element name="TBNRecipe" positionX="0" positionY="0" width="128" height="658"/>
+        <element name="TBNStyle" positionX="0" positionY="0" width="128" height="388"/>
+        <element name="TBNWater" positionX="0" positionY="0" width="128" height="208"/>
+        <element name="TBNYeast" positionX="0" positionY="0" width="128" height="313"/>
+    </elements>
+</model>
