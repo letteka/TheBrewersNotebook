@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4913F497192BDEBC0021E59F /* TheBrewersNotebookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4913F495192BDEBC0021E59F /* TheBrewersNotebookTests.m */; };
 		494819A2192AC0C7003C46A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49471BDC19215D6700FC970E /* Foundation.framework */; };
 		494819A3192AC0C7003C46A7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49471BDE19215D6700FC970E /* CoreGraphics.framework */; };
 		494819A4192AC0C7003C46A7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49471BE019215D6700FC970E /* UIKit.framework */; };
@@ -54,6 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4913F494192BDEBC0021E59F /* TheBrewersNotebookTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TheBrewersNotebookTests-Info.plist"; sourceTree = "<group>"; };
+		4913F495192BDEBC0021E59F /* TheBrewersNotebookTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheBrewersNotebookTests.m; sourceTree = "<group>"; };
 		49471BDC19215D6700FC970E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		49471BDE19215D6700FC970E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		49471BE019215D6700FC970E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -141,10 +144,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4913F493192BDEBC0021E59F /* TheBrewersNotebookTests */ = {
+			isa = PBXGroup;
+			children = (
+				4913F494192BDEBC0021E59F /* TheBrewersNotebookTests-Info.plist */,
+				4913F495192BDEBC0021E59F /* TheBrewersNotebookTests.m */,
+			);
+			path = TheBrewersNotebookTests;
+			sourceTree = "<group>";
+		};
 		49471BD019215D6700FC970E = {
 			isa = PBXGroup;
 			children = (
 				49471BE219215D6700FC970E /* TheBrewersNotebook */,
+				4913F493192BDEBC0021E59F /* TheBrewersNotebookTests */,
 				49471BDB19215D6700FC970E /* Frameworks */,
 				49471BDA19215D6700FC970E /* Products */,
 			);
@@ -402,6 +415,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4913F497192BDEBC0021E59F /* TheBrewersNotebookTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,7 +506,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TheBrewersNotebook/Supporting Files/TheBrewersNotebook-Prefix.pch";
-				INFOPLIST_FILE = "TheBrewersNotebookTests/Supporting Files/TheBrewersNotebookTests-Info.plist";
+				INFOPLIST_FILE = "TheBrewersNotebookTests/TheBrewersNotebookTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -616,7 +630,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "TheBrewersNotebookTests/Supporting Files/TheBrewersNotebookTests-Info.plist";
+				INFOPLIST_FILE = "TheBrewersNotebookTests/TheBrewersNotebookTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -634,7 +648,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TheBrewersNotebook/Supporting Files/TheBrewersNotebook-Prefix.pch";
-				INFOPLIST_FILE = "TheBrewersNotebookTests/Supporting Files/TheBrewersNotebookTests-Info.plist";
+				INFOPLIST_FILE = "TheBrewersNotebookTests/TheBrewersNotebookTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
