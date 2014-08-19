@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4913F497192BDEBC0021E59F /* TheBrewersNotebookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4913F495192BDEBC0021E59F /* TheBrewersNotebookTests.m */; };
+		4929855619A2AA9E00A1C9E8 /* recipes.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4929855519A2AA9D00A1C9E8 /* recipes.xml */; };
 		494819A2192AC0C7003C46A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49471BDC19215D6700FC970E /* Foundation.framework */; };
 		494819A3192AC0C7003C46A7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49471BDE19215D6700FC970E /* CoreGraphics.framework */; };
 		494819A4192AC0C7003C46A7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49471BE019215D6700FC970E /* UIKit.framework */; };
@@ -57,6 +58,8 @@
 /* Begin PBXFileReference section */
 		4913F494192BDEBC0021E59F /* TheBrewersNotebookTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TheBrewersNotebookTests-Info.plist"; sourceTree = "<group>"; };
 		4913F495192BDEBC0021E59F /* TheBrewersNotebookTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheBrewersNotebookTests.m; sourceTree = "<group>"; };
+		4929854619A2AA5E00A1C9E8 /* GTL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GTL.xcodeproj; path = "../ThirdParty/google-api-objectivec-client-read-only/Source/GTL.xcodeproj"; sourceTree = "<group>"; };
+		4929855519A2AA9D00A1C9E8 /* recipes.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = recipes.xml; sourceTree = "<group>"; };
 		49471BDC19215D6700FC970E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		49471BDE19215D6700FC970E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		49471BE019215D6700FC970E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -157,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				49471BE219215D6700FC970E /* TheBrewersNotebook */,
+				4929854619A2AA5E00A1C9E8 /* GTL.xcodeproj */,
 				4913F493192BDEBC0021E59F /* TheBrewersNotebookTests */,
 				49471BDB19215D6700FC970E /* Frameworks */,
 				49471BDA19215D6700FC970E /* Products */,
@@ -212,6 +216,7 @@
 		49471C1519215E9D00FC970E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4929855519A2AA9D00A1C9E8 /* recipes.xml */,
 				49471C1819215E9D00FC970E /* InfoPlist.strings */,
 				49471C1A19215E9D00FC970E /* Images.xcassets */,
 				49471C1B19215E9D00FC970E /* main.m */,
@@ -365,6 +370,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				496E6DA0192AC261000B95CE /* InfoPlist.strings in Resources */,
+				4929855619A2AA9E00A1C9E8 /* recipes.xml in Resources */,
 				496E6D9F192AC256000B95CE /* Images.xcassets in Resources */,
 				496E6D9D192AC1E0000B95CE /* Main.storyboard in Resources */,
 			);
