@@ -15,10 +15,17 @@
 @synthesize managedObjectContext = _managedObjectContext;
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
+@synthesize kKeychainItemName = _kKeychainItemName;
+@synthesize kClientID = _kClientID;
+@synthesize kClientSecret = _kClientSecret;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    _kKeychainItemName = @"Google Drive Quickstart";
+    _kClientID = @"7061650917-8fvvk0bgdt9foj6lcf68equi1ttu5mf4.apps.googleusercontent.com";
+    _kClientSecret = @"ByvKDOYa_WC5NwGjPYhE2Z3W";
+    
     TBNBeerXMLRecipeParser* recipeParser = [[TBNBeerXMLRecipeParser alloc] init];
     
     NSArray *directoryContent = [[NSFileManager defaultManager] contentsOfDirectoryAtURL:[self applicationDocumentsDirectory]

@@ -16,6 +16,10 @@
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
+@property (readonly, strong, nonatomic) NSString *kKeychainItemName;
+@property (readonly, strong, nonatomic) NSString *kClientID;
+@property (readonly, strong, nonatomic) NSString *kClientSecret;
+
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
 

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4912DBD919A66EC200024D3A /* libGTLTouchStaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4912DBD419A655A400024D3A /* libGTLTouchStaticLib.a */; };
+		4912DBDB19A67B5400024D3A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4912DBDA19A67B5400024D3A /* Security.framework */; };
+		4912DBDD19A67B5D00024D3A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4912DBDC19A67B5D00024D3A /* SystemConfiguration.framework */; };
+		4912DBDF19A67C4D00024D3A /* GTMOAuth2ViewTouch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4912DBDE19A67C4D00024D3A /* GTMOAuth2ViewTouch.xib */; };
+		4912DBE219A67C6F00024D3A /* GTLDrive_Sources.m in Sources */ = {isa = PBXBuildFile; fileRef = 4912DBE019A67C6F00024D3A /* GTLDrive_Sources.m */; };
+		4912DBE319A68B8700024D3A /* BrewersNotebook.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = 49C145E7192AB1AA0056B05C /* BrewersNotebook.xcdatamodeld */; };
 		4913F497192BDEBC0021E59F /* TheBrewersNotebookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4913F495192BDEBC0021E59F /* TheBrewersNotebookTests.m */; };
 		4929855619A2AA9E00A1C9E8 /* recipes.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4929855519A2AA9D00A1C9E8 /* recipes.xml */; };
 		494819A2192AC0C7003C46A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49471BDC19215D6700FC970E /* Foundation.framework */; };
@@ -46,6 +52,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4912DBD119A655A400024D3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4929854619A2AA5E00A1C9E8 /* GTL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4F38F6A60B66E91D00B24B81;
+			remoteInfo = GTLFramework;
+		};
+		4912DBD319A655A400024D3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4929854619A2AA5E00A1C9E8 /* GTL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4F12027C11A4CA2F00BEB470;
+			remoteInfo = GTLTouchStaticLib;
+		};
+		4912DBD519A655A400024D3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4929854619A2AA5E00A1C9E8 /* GTL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4F12027D11A4CA2F00BEB470;
+			remoteInfo = GTLUnitTests;
+		};
+		4912DBD719A655A400024D3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4929854619A2AA5E00A1C9E8 /* GTL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4F1AD9020B71603F00DC0485;
+			remoteInfo = DevelopmentTestTool;
+		};
 		494819BB192AC0C7003C46A7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 49471BD119215D6700FC970E /* Project object */;
@@ -56,6 +90,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4912DBDA19A67B5400024D3A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		4912DBDC19A67B5D00024D3A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4912DBDE19A67C4D00024D3A /* GTMOAuth2ViewTouch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GTMOAuth2ViewTouch.xib; sourceTree = "<group>"; };
+		4912DBE019A67C6F00024D3A /* GTLDrive_Sources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLDrive_Sources.m; sourceTree = "<group>"; };
+		4912DBE119A67C6F00024D3A /* GTLDrive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLDrive.h; sourceTree = "<group>"; };
 		4913F494192BDEBC0021E59F /* TheBrewersNotebookTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TheBrewersNotebookTests-Info.plist"; sourceTree = "<group>"; };
 		4913F495192BDEBC0021E59F /* TheBrewersNotebookTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheBrewersNotebookTests.m; sourceTree = "<group>"; };
 		4929854619A2AA5E00A1C9E8 /* GTL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GTL.xcodeproj; path = "../ThirdParty/google-api-objectivec-client-read-only/Source/GTL.xcodeproj"; sourceTree = "<group>"; };
@@ -127,6 +166,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4912DBDD19A67B5D00024D3A /* SystemConfiguration.framework in Frameworks */,
+				4912DBDB19A67B5400024D3A /* Security.framework in Frameworks */,
+				4912DBD919A66EC200024D3A /* libGTLTouchStaticLib.a in Frameworks */,
 				496E6D9C192AC182000B95CE /* CoreData.framework in Frameworks */,
 				494819A3192AC0C7003C46A7 /* CoreGraphics.framework in Frameworks */,
 				494819A4192AC0C7003C46A7 /* UIKit.framework in Frameworks */,
@@ -147,6 +189,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4912DBCB19A655A400024D3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4912DBD219A655A400024D3A /* GTL.framework */,
+				4912DBD419A655A400024D3A /* libGTLTouchStaticLib.a */,
+				4912DBD619A655A400024D3A /* GTLUnitTests.xctest */,
+				4912DBD819A655A400024D3A /* DevelopmentTestTool */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		4913F493192BDEBC0021E59F /* TheBrewersNotebookTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +232,8 @@
 		49471BDB19215D6700FC970E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4912DBDC19A67B5D00024D3A /* SystemConfiguration.framework */,
+				4912DBDA19A67B5400024D3A /* Security.framework */,
 				49481964192ABFFB003C46A7 /* CoreData.framework */,
 				49471BDC19215D6700FC970E /* Foundation.framework */,
 				49471BDE19215D6700FC970E /* CoreGraphics.framework */,
@@ -191,6 +246,8 @@
 		49471BE219215D6700FC970E /* TheBrewersNotebook */ = {
 			isa = PBXGroup;
 			children = (
+				4912DBE019A67C6F00024D3A /* GTLDrive_Sources.m */,
+				4912DBE119A67C6F00024D3A /* GTLDrive.h */,
 				49C145D2192AB1AA0056B05C /* Model */,
 				49471C1119215E9D00FC970E /* Controller */,
 				49C145B3192AB0CB0056B05C /* Parsers */,
@@ -216,6 +273,7 @@
 		49471C1519215E9D00FC970E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4912DBDE19A67C4D00024D3A /* GTMOAuth2ViewTouch.xib */,
 				4929855519A2AA9D00A1C9E8 /* recipes.xml */,
 				49471C1819215E9D00FC970E /* InfoPlist.strings */,
 				49471C1A19215E9D00FC970E /* Images.xcassets */,
@@ -356,6 +414,12 @@
 			mainGroup = 49471BD019215D6700FC970E;
 			productRefGroup = 49471BDA19215D6700FC970E /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4912DBCB19A655A400024D3A /* Products */;
+					ProjectRef = 4929854619A2AA5E00A1C9E8 /* GTL.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				494819A0192AC0C7003C46A7 /* TheBrewersNotebook */,
@@ -364,11 +428,44 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		4912DBD219A655A400024D3A /* GTL.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GTL.framework;
+			remoteRef = 4912DBD119A655A400024D3A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4912DBD419A655A400024D3A /* libGTLTouchStaticLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGTLTouchStaticLib.a;
+			remoteRef = 4912DBD319A655A400024D3A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4912DBD619A655A400024D3A /* GTLUnitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GTLUnitTests.xctest;
+			remoteRef = 4912DBD519A655A400024D3A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4912DBD819A655A400024D3A /* DevelopmentTestTool */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = DevelopmentTestTool;
+			remoteRef = 4912DBD719A655A400024D3A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		4948199F192AC0C7003C46A7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4912DBE319A68B8700024D3A /* BrewersNotebook.xcdatamodeld in Resources */,
+				4912DBDF19A67C4D00024D3A /* GTMOAuth2ViewTouch.xib in Resources */,
 				496E6DA0192AC261000B95CE /* InfoPlist.strings in Resources */,
 				4929855619A2AA9E00A1C9E8 /* recipes.xml in Resources */,
 				496E6D9F192AC256000B95CE /* Images.xcassets in Resources */,
@@ -400,6 +497,7 @@
 				496E6D7A192AC177000B95CE /* TBNMisc.m in Sources */,
 				496E6D7C192AC177000B95CE /* TBNRecipe.m in Sources */,
 				496E6D7E192AC177000B95CE /* TBNStyle.m in Sources */,
+				4912DBE219A67C6F00024D3A /* GTLDrive_Sources.m in Sources */,
 				496E6D80192AC177000B95CE /* TBNWater.m in Sources */,
 				496E6D82192AC177000B95CE /* TBNYeast.m in Sources */,
 				496E6D84192AC177000B95CE /* TBNAppDelegate.m in Sources */,
@@ -459,6 +557,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv7s,
+					armv7,
+				);
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -482,7 +584,12 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "../ThirdParty/google-api-objectivec-client-read-only/Source/**";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = "TestFlight Release";
@@ -524,6 +631,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv7s,
+					armv7,
+				);
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -554,7 +665,12 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "../ThirdParty/google-api-objectivec-client-read-only/Source/**";
 			};
 			name = Debug;
 		};
@@ -562,6 +678,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv7s,
+					armv7,
+				);
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -585,7 +705,12 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "../ThirdParty/google-api-objectivec-client-read-only/Source/**";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
