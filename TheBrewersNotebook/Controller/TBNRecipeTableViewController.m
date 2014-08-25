@@ -9,6 +9,7 @@
 #import "TBNRecipeTableViewController.h"
 #import "TBNAppDelegate.h"
 #import "TBNRecipe.h"
+#import "TBNRecipeDetailViewController.h"
 
 @interface TBNRecipeTableViewController ()
 
@@ -110,6 +111,13 @@
     return cell;
 }
 
+//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    tbnRecipe
+//}
+
+#pragma mark - Google Docs stuff
+
 // Helper to check if user is authorized
 - (BOOL)isAuthorized
 {
@@ -190,11 +198,11 @@
 }
 
 // Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
+//- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    // Return NO if you do not want the specified item to be editable.
+//    return YES;
+//}
 
 // Handle completion of the authorization process, and updates the Drive service
 // with the new credentials.
@@ -233,15 +241,20 @@
 
 #pragma mark - UITableViewDelegate
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"TBNSegueRecipeDetail"])
+    {
+        TBNRecipeDetailViewController *recipeDetailViewController = [segue destinationViewController];
+        NSIndexPath *indexPath = self.tableView.indexPathForSelectedRow;
+        TBNRecipe *recipe = [_recipesFRC objectAtIndexPath:indexPath];
+        recipeDetailViewController.recipe = recipe;
+    }
 }
-*/
+
 
 @end

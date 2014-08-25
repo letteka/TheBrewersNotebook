@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TBNRecipeDetailViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+#import "TBNRecipe.h"
+
+@interface TBNRecipeDetailViewController : UIViewController
+
+@property (nonatomic, strong) TBNRecipe* recipe;
 
 @end

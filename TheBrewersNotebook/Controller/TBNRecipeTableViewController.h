@@ -15,6 +15,8 @@
 
 @interface TBNRecipeTableViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, NSFetchedResultsControllerDelegate>
 
+@property (nonatomic, strong) IBOutlet UITableView* tableView;
+
 @property (nonatomic, retain) GTLServiceDrive *driveService;
 
 - (IBAction)editButtonPressed:(id)sender;
