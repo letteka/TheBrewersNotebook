@@ -575,7 +575,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Parthenon Software Group, Inc. (YPSZ96GDUS)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -590,7 +590,7 @@
 					"-ObjC",
 					"-all_load",
 				);
-				PROVISIONING_PROFILE = "fbe3c68d-4fe7-4377-ab03-ba52f8913538";
+				PROVISIONING_PROFILE = "5EB797B3-45EB-470F-B504-AE782CAE769E";
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "../ThirdParty/google-api-objectivec-client-read-only/Source/**";
 				VALIDATE_PRODUCT = YES;
@@ -603,12 +603,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Parthenon Software Group, Inc. (YPSZ96GDUS)";
+				CODE_SIGN_IDENTITY = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TheBrewersNotebook/Supporting Files/TheBrewersNotebook-Prefix.pch";
 				INFOPLIST_FILE = "TheBrewersNotebook/Supporting Files/TheBrewersNotebook-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "33C9FC14-6D2E-4B77-A29E-B7032B64C11D";
+				PROVISIONING_PROFILE = "fbe3c68d-4fe7-4377-ab03-ba52f8913538";
 				WRAPPER_EXTENSION = app;
 			};
 			name = "TestFlight Release";
@@ -815,7 +815,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Parthenon Software Group, Inc. (YPSZ96GDUS)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -837,7 +837,7 @@
 					"-ObjC",
 					"-all_load",
 				);
-				PROVISIONING_PROFILE = "fbe3c68d-4fe7-4377-ab03-ba52f8913538";
+				PROVISIONING_PROFILE = "5EB797B3-45EB-470F-B504-AE782CAE769E";
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "../ThirdParty/google-api-objectivec-client-read-only/Source/**";
 				VALID_ARCHS = "armv7 armv7s";
