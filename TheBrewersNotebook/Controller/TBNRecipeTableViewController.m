@@ -58,11 +58,11 @@
                                                                                          clientID:appDelegate.kClientID
                                                                                      clientSecret:appDelegate.kClientSecret];
     
-    if (![self isAuthorized])
-    {
-        // Not yet authorized, request authorization and push the login UI onto the navigation stack.
-        [self.navigationController pushViewController:[self createAuthController] animated:YES];
-    }
+//    if (![self isAuthorized])
+//    {
+//        // Not yet authorized, request authorization and push the login UI onto the navigation stack.
+//        [self.navigationController pushViewController:[self createAuthController] animated:YES];
+//    }
 }
 
 - (void)didReceiveMemoryWarning

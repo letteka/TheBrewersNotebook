@@ -48,6 +48,7 @@
 		496E6D9F192AC256000B95CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49471C1A19215E9D00FC970E /* Images.xcassets */; };
 		496E6DA0192AC261000B95CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 49471C1819215E9D00FC970E /* InfoPlist.strings */; };
 		496E6DA3192BCB19000B95CE /* TBNRecipeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 496E6DA2192BCB19000B95CE /* TBNRecipeDetailViewController.m */; };
+		49C9333619ACF71D000CAB24 /* TBNRecipeTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C9333519ACF71D000CAB24 /* TBNRecipeTimerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -157,6 +158,8 @@
 		49C1464F192AB3680056B05C /* TBNEquipment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBNEquipment.m; sourceTree = "<group>"; };
 		49C14651192AB3680056B05C /* TBNHop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBNHop.h; sourceTree = "<group>"; };
 		49C14652192AB3680056B05C /* TBNHop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBNHop.m; sourceTree = "<group>"; };
+		49C9333419ACF71D000CAB24 /* TBNRecipeTimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBNRecipeTimerViewController.h; sourceTree = "<group>"; };
+		49C9333519ACF71D000CAB24 /* TBNRecipeTimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBNRecipeTimerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,6 +267,8 @@
 				49471C2F19215F6E00FC970E /* TBNRecipeTableViewController.m */,
 				496E6DA1192BCB19000B95CE /* TBNRecipeDetailViewController.h */,
 				496E6DA2192BCB19000B95CE /* TBNRecipeDetailViewController.m */,
+				49C9333419ACF71D000CAB24 /* TBNRecipeTimerViewController.h */,
+				49C9333519ACF71D000CAB24 /* TBNRecipeTimerViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -389,7 +394,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = TBN;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = ParthenonSoftwareGroup;
 				TargetAttributes = {
 					494819A0192AC0C7003C46A7 = {
@@ -484,6 +489,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				496E6DA3192BCB19000B95CE /* TBNRecipeDetailViewController.m in Sources */,
+				49C9333619ACF71D000CAB24 /* TBNRecipeTimerViewController.m in Sources */,
 				496E6D9E192AC241000B95CE /* main.m in Sources */,
 				496E6D70192AC177000B95CE /* TBNEquipment.m in Sources */,
 				496E6D72192AC177000B95CE /* TBNGrain.m in Sources */,
@@ -553,10 +559,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					armv7s,
-					armv7,
-				);
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -584,6 +586,7 @@
 					"-ObjC",
 					"-all_load",
 				);
+				PROVISIONING_PROFILE = "E185F4BB-A96F-4448-8450-C0D2AB107DDC";
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "../ThirdParty/google-api-objectivec-client-read-only/Source/**";
 				VALIDATE_PRODUCT = YES;
@@ -627,10 +630,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					armv7s,
-					armv7,
-				);
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -665,6 +664,7 @@
 					"-ObjC",
 					"-all_load",
 				);
+				PROVISIONING_PROFILE = "E185F4BB-A96F-4448-8450-C0D2AB107DDC";
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "../ThirdParty/google-api-objectivec-client-read-only/Source/**";
 			};
@@ -674,10 +674,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					armv7s,
-					armv7,
-				);
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -705,6 +701,7 @@
 					"-ObjC",
 					"-all_load",
 				);
+				PROVISIONING_PROFILE = "E185F4BB-A96F-4448-8450-C0D2AB107DDC";
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "../ThirdParty/google-api-objectivec-client-read-only/Source/**";
 				VALIDATE_PRODUCT = YES;
@@ -783,6 +780,90 @@
 			};
 			name = Release;
 		};
+		49554DBA19AD0DC500C422A6 /* TestFlight */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PROVISIONING_PROFILE = "E185F4BB-A96F-4448-8450-C0D2AB107DDC";
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "../ThirdParty/google-api-objectivec-client-read-only/Source/**";
+			};
+			name = TestFlight;
+		};
+		49554DBB19AD0DC500C422A6 /* TestFlight */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TheBrewersNotebook/Supporting Files/TheBrewersNotebook-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TheBrewersNotebook/Supporting Files/TheBrewersNotebook-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = TestFlight;
+		};
+		49554DBC19AD0DC500C422A6 /* TestFlight */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TheBrewersNotebook.app/TheBrewersNotebook";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TheBrewersNotebook/Supporting Files/TheBrewersNotebook-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TheBrewersNotebookTests/TheBrewersNotebookTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = TestFlight;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -790,6 +871,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				49471C0919215D6700FC970E /* Debug */,
+				49554DBA19AD0DC500C422A6 /* TestFlight */,
 				49471C0A19215D6700FC970E /* Release */,
 				4913F490192BD4380021E59F /* TestFlight Release */,
 			);
@@ -800,6 +882,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				494819C6192AC0C7003C46A7 /* Debug */,
+				49554DBB19AD0DC500C422A6 /* TestFlight */,
 				494819C7192AC0C7003C46A7 /* Release */,
 				4913F491192BD4380021E59F /* TestFlight Release */,
 			);
@@ -810,6 +893,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				494819C9192AC0C7003C46A7 /* Debug */,
+				49554DBC19AD0DC500C422A6 /* TestFlight */,
 				494819CA192AC0C7003C46A7 /* Release */,
 				4913F492192BD4380021E59F /* TestFlight Release */,
 			);
