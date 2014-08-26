@@ -590,7 +590,7 @@
 					"-ObjC",
 					"-all_load",
 				);
-				PROVISIONING_PROFILE = "E185F4BB-A96F-4448-8450-C0D2AB107DDC";
+				PROVISIONING_PROFILE = "fbe3c68d-4fe7-4377-ab03-ba52f8913538";
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "../ThirdParty/google-api-objectivec-client-read-only/Source/**";
 				VALIDATE_PRODUCT = YES;
@@ -673,7 +673,7 @@
 					"-ObjC",
 					"-all_load",
 				);
-				PROVISIONING_PROFILE = "E185F4BB-A96F-4448-8450-C0D2AB107DDC";
+				PROVISIONING_PROFILE = "fbe3c68d-4fe7-4377-ab03-ba52f8913538";
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "../ThirdParty/google-api-objectivec-client-read-only/Source/**";
 				VALID_ARCHS = "armv7 armv7s";
@@ -715,7 +715,7 @@
 					"-ObjC",
 					"-all_load",
 				);
-				PROVISIONING_PROFILE = "E185F4BB-A96F-4448-8450-C0D2AB107DDC";
+				PROVISIONING_PROFILE = "fbe3c68d-4fe7-4377-ab03-ba52f8913538";
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "../ThirdParty/google-api-objectivec-client-read-only/Source/**";
 				VALIDATE_PRODUCT = YES;
@@ -837,7 +837,7 @@
 					"-ObjC",
 					"-all_load",
 				);
-				PROVISIONING_PROFILE = "E185F4BB-A96F-4448-8450-C0D2AB107DDC";
+				PROVISIONING_PROFILE = "fbe3c68d-4fe7-4377-ab03-ba52f8913538";
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "../ThirdParty/google-api-objectivec-client-read-only/Source/**";
 				VALID_ARCHS = "armv7 armv7s";
