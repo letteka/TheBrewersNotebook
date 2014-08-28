@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4912DBD919A66EC200024D3A /* libGTLTouchStaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4912DBD419A655A400024D3A /* libGTLTouchStaticLib.a */; };
 		4912DBDB19A67B5400024D3A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4912DBDA19A67B5400024D3A /* Security.framework */; };
 		4912DBDD19A67B5D00024D3A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4912DBDC19A67B5D00024D3A /* SystemConfiguration.framework */; };
 		4912DBDF19A67C4D00024D3A /* GTMOAuth2ViewTouch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4912DBDE19A67C4D00024D3A /* GTMOAuth2ViewTouch.xib */; };
@@ -48,6 +47,7 @@
 		496E6D9F192AC256000B95CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49471C1A19215E9D00FC970E /* Images.xcassets */; };
 		496E6DA0192AC261000B95CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 49471C1819215E9D00FC970E /* InfoPlist.strings */; };
 		496E6DA3192BCB19000B95CE /* TBNRecipeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 496E6DA2192BCB19000B95CE /* TBNRecipeDetailViewController.m */; };
+		4989DB0119AE84EE00255087 /* libGTLTouchStaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4912DBD419A655A400024D3A /* libGTLTouchStaticLib.a */; };
 		49C9333619ACF71D000CAB24 /* TBNRecipeTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C9333519ACF71D000CAB24 /* TBNRecipeTimerViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -167,9 +167,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4989DB0119AE84EE00255087 /* libGTLTouchStaticLib.a in Frameworks */,
 				4912DBDD19A67B5D00024D3A /* SystemConfiguration.framework in Frameworks */,
 				4912DBDB19A67B5400024D3A /* Security.framework in Frameworks */,
-				4912DBD919A66EC200024D3A /* libGTLTouchStaticLib.a in Frameworks */,
 				496E6D9C192AC182000B95CE /* CoreData.framework in Frameworks */,
 				494819A3192AC0C7003C46A7 /* CoreGraphics.framework in Frameworks */,
 				494819A4192AC0C7003C46A7 /* UIKit.framework in Frameworks */,
@@ -559,10 +559,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					armv7s,
-					armv7,
-				);
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -594,7 +590,7 @@
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "../ThirdParty/google-api-objectivec-client-read-only/Source/**";
 				VALIDATE_PRODUCT = YES;
-				VALID_ARCHS = "armv7 armv7s";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = "TestFlight Release";
 		};
@@ -603,12 +599,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Parthenon Software Group, Inc. (YPSZ96GDUS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Parthenon Software Group, Inc. (YPSZ96GDUS)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TheBrewersNotebook/Supporting Files/TheBrewersNotebook-Prefix.pch";
 				INFOPLIST_FILE = "TheBrewersNotebook/Supporting Files/TheBrewersNotebook-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/andrew/Projects/ThirdParty/google-api-objectivec-client-read-only",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "fbe3c68d-4fe7-4377-ab03-ba52f8913538";
+				PROVISIONING_PROFILE = "5EB797B3-45EB-470F-B504-AE782CAE769E";
 				WRAPPER_EXTENSION = app;
 			};
 			name = "TestFlight Release";
@@ -635,10 +636,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					armv7s,
-					armv7,
-				);
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -673,10 +670,10 @@
 					"-ObjC",
 					"-all_load",
 				);
-				PROVISIONING_PROFILE = "fbe3c68d-4fe7-4377-ab03-ba52f8913538";
+				PROVISIONING_PROFILE = "3B468BFC-3D76-4B74-BECF-7C509E0600A1";
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "../ThirdParty/google-api-objectivec-client-read-only/Source/**";
-				VALID_ARCHS = "armv7 armv7s";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -684,10 +681,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					armv7s,
-					armv7,
-				);
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -715,11 +708,11 @@
 					"-ObjC",
 					"-all_load",
 				);
-				PROVISIONING_PROFILE = "fbe3c68d-4fe7-4377-ab03-ba52f8913538";
+				PROVISIONING_PROFILE = "3B468BFC-3D76-4B74-BECF-7C509E0600A1";
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "../ThirdParty/google-api-objectivec-client-read-only/Source/**";
 				VALIDATE_PRODUCT = YES;
-				VALID_ARCHS = "armv7 armv7s";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Release;
 		};
@@ -729,6 +722,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TheBrewersNotebook/Supporting Files/TheBrewersNotebook-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -736,7 +730,12 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "TheBrewersNotebook/Supporting Files/TheBrewersNotebook-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/andrew/Projects/ThirdParty/google-api-objectivec-client-read-only",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -747,10 +746,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TheBrewersNotebook/Supporting Files/TheBrewersNotebook-Prefix.pch";
 				INFOPLIST_FILE = "TheBrewersNotebook/Supporting Files/TheBrewersNotebook-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/andrew/Projects/ThirdParty/google-api-objectivec-client-read-only",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -799,10 +804,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					armv7s,
-					armv7,
-				);
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -840,7 +841,7 @@
 				PROVISIONING_PROFILE = "5EB797B3-45EB-470F-B504-AE782CAE769E";
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "../ThirdParty/google-api-objectivec-client-read-only/Source/**";
-				VALID_ARCHS = "armv7 armv7s";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = TestFlight;
 		};
@@ -849,7 +850,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Parthenon Software Group, Inc. (YPSZ96GDUS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Parthenon Software Group, Inc. (YPSZ96GDUS)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TheBrewersNotebook/Supporting Files/TheBrewersNotebook-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -857,7 +859,12 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "TheBrewersNotebook/Supporting Files/TheBrewersNotebook-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/andrew/Projects/ThirdParty/google-api-objectivec-client-read-only",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5EB797B3-45EB-470F-B504-AE782CAE769E";
 				WRAPPER_EXTENSION = app;
 			};
 			name = TestFlight;
